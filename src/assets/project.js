@@ -122,3 +122,14 @@ export const experience = [
   }
 
 ]
+
+// services 
+
+export const services = [
+  {
+    id:1,
+    role:"Web Design",
+    description:"I create, modern UI for scalable user interface. Looks attractive to the user feels natural",
+     
+  }
+]

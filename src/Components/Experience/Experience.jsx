@@ -42,7 +42,7 @@ const Experience = () => {
                   </ul>
                 ))}
               </div>
-              <span className="absolute inset-0 -top-2 -left-2 h-3 w-3 transition-transform duration-100 bg-blue-600
+              <span className="absolute inset-0 -top-2 -left-[9px] h-4 w-4 transition-transform duration-100 bg-blue-600
                rounded-full group-hover:scale-150 group-hover:bg-amber-400"></span>
             </motion.div>
           ))}

@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "motion/react";
 
-const Contact = () => {
+const Contact = ({mode}) => {
 
    const handleSubmit = (e)=>{
       e.preventDefault()
    }
   return (
-    <div className="w-full px-3 md:px-12 lg-px-20 py-20 md:py-30">
+    <div className={`w-full px-3 md:px-12 lg-px-20 py-20 md:py-30 ${ mode === 'light-mode' ? 'bg-[#fff]' : 'bg-[#111]' } `}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-10">
         
         {/* left side */}
