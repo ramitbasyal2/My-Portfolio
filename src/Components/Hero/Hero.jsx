@@ -29,14 +29,15 @@ const Hero = () => {
         left-3 rounded-full" ></span> <p className="text-[13px] max-sm:text-[10px] ml-2 max-sm:ml-1 text-neutral-500">AVAILABLE FOR NEW OPPORTUNITIES</p>
       </motion.div>
       <div className="mt-4 max-sm:text-5xl sm:text-8xl md:text-[110px] lg:text-[130px] font-bold">
-        <h1>BIULT</h1>
+        <h1>BUILT</h1>
         <h1 className="text-blue-800">TO BUILD</h1>
       </div>
       <div className="mt-8 max-sm:mt-6 md:w-2xl lg:w-3xl">
         <p className="text-neutral-500 max-sm:text-xl text-2xl">
-          I craft highly impresive and performant digital experience where
-          <span> motion meets functionality</span>. Specialized in React ,
-          Typescript, and sophisticated web interactions.{" "}
+       I enjoy building fast, interactive web experiences with a strong focus on design and performance.
+        Most of my work is around React, and modern web technologies.
+
+
         </p>
       </div>
       <div className="flex items-center justify-center mt-10 max-sm:mt-8 gap-3 md:gap-4">

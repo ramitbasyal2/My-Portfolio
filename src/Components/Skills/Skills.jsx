@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { skillLists } from "../../assets/project";
 import { motion } from "motion/react";
+import { ChevronDown } from "lucide-react";
 
 const Skills = () => {
+
+  const [data,setData] = useState(true)
+  const [extraData,setExtraData] = useState(true)
+  
+
   return (
     <div className={`w-full py-20 lg:py-40 md:px-12 px-6 `}>
       <div className="max-w-7xl mx-auto ">
@@ -15,12 +21,17 @@ const Skills = () => {
         </div>
 
         {/* skills  */}
-        <div className="relative border-l border-gray-600 p-6">
-          <span className="w-8 h-8 bg-blue-700 absolute -top-6 -left-4 inset-0 rounded-full "></span>
-          <h2 className="text-xl font-bold mb-4">Frontend :</h2>
+        <div onClick={()=> setData(!data)} className="relative border-l border-gray-600 p-6">
+          <span  className="w-8 h-8 bg-blue-700 absolute -top-6 -left-4 inset-0 rounded-full cursor-pointer
+           flex items-center justify-center "> <ChevronDown 
+           className={`transition-transform duration-300  ${data ? 'rotate-0' : 'rotate-180' } `} size={28}/> </span>
+           
+               <div className= {`overflow-hidden transition-all duration-500 ease-in-out
+                ${data ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0' } `}>
+               <h2 className="text-xl font-bold mb-4">Frontend :</h2>
           <div className="mb-8 border border-neutral-600 px-4 py-4 rounded-md">
             <ul className=" text-gray-400 mb-4">
-              <li>  . Focused on clean architecture, optimized rendering, and    scalable frontend solutions. </li>             
+              <li>● Focused on clean architecture, optimized rendering, and scalable frontend solutions. </li>             
             </ul>
             <div className="mt-2 flex flex-wrap gap-3 rounded-md mb-3 text-[12px] lg:text-[14px]">
               <p className="bg-neutral-700 px-3 rounded-xl">HTML</p>
@@ -29,11 +40,12 @@ const Skills = () => {
               <p className="bg-neutral-700 px-3 rounded-xl"> JAVASCRIPT</p>
               <p className="bg-neutral-700 px-3 rounded-xl">REACT</p>
             </div>
+            
           </div>
           <h2 className="text-xl font-bold mb-4">Backend :</h2>
           <div className="border border-neutral-600 p-4 mb-4 rounded-md">
             <ul className=" text-gray-400 mb-4">
-              <li>.Experience working with Node.js, Express, and databases (MongoDB / SQL) to build scalable applications. </li>                             
+              <li>  ● Have experience working with Node.js and Express to build scalable and efficient backend applications.</li>                             
             </ul>
               <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
               <p className="bg-neutral-700 px-3 rounded-xl">NODE.JS</p>
@@ -43,13 +55,17 @@ const Skills = () => {
               <p className="bg-neutral-700 px-3 rounded-xl">REST</p>
             </div>
            </div>
+             </div>
            </div>
-           <div className="relative border-l border-gray-600 p-6">
-             <span className="w-8 h-8 bg-blue-700 absolute -top-6 -left-4 inset-0 rounded-full "></span>
-            <h2 className="text-xl font-bold mb-4">Databases :</h2>
+
+           <div onClick={()=> setExtraData(!extraData)} className="relative border-l border-gray-600 p-6">
+             <span className="w-8 h-8 bg-blue-700 absolute -top-6 -left-4 inset-0 cursor-pointer rounded-full flex items-center justify-center "><ChevronDown
+              className={`transition-transform duration-300 ${extraData ? 'rotate-0' : 'rotate-180' }`} size={28}/></span>
+             <div className={`overflow-hidden transition-all duration-500 ease-in-out  ${extraData ? 'max-h-[1000px]' : 'max-h-0' }  `}> 
+                 <h2 className="text-xl font-bold mb-4">Databases :</h2>
           <div className="border border-neutral-600 p-4 mb-4 rounded-md">
             <ul className=" text-gray-400 mb-4">
-              <li>.Experience working with Node.js, Express, and databases (MongoDB / SQL) to build scalable applications. </li>                             
+              <li> ● Databases play a critical role in data storage and management. Below are the databases I work with. </li>                             
             </ul>
               <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
               <p className="bg-neutral-700 px-3 rounded-xl">MONGODB</p>
@@ -61,7 +77,7 @@ const Skills = () => {
            <h2 className="text-xl font-bold mb-4">Deployment :</h2>
           <div className="border border-neutral-600 p-4 mb-4 rounded-md">
             <ul className=" text-gray-400 mb-4">
-              <li>.Experience working with Node.js, Express, and databases (MongoDB / SQL) to build scalable applications. </li>                             
+              <li> ● I also handle application deployment using reliable platforms to ensure smooth, secure, and scalable production environments. </li>                             
             </ul>
               <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
               <p className="bg-neutral-700 px-3 rounded-xl">vercel</p>
@@ -72,7 +88,7 @@ const Skills = () => {
            <h2 className="text-xl font-bold mb-4">Tools :</h2>
           <div className="border border-neutral-600 p-4 mb-4 rounded-md">
             <ul className=" text-gray-400 mb-4">
-              <li>.Experience working with Node.js, Express, and databases (MongoDB / SQL) to build scalable applications. </li>                             
+              <li> ● In addition, I use the following  tools and technologies to improve development workflow and productivity. </li>                             
             </ul>
               <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
               <p className="bg-neutral-700 px-3 rounded-xl">Git</p>
@@ -81,6 +97,8 @@ const Skills = () => {
                                 <p className="bg-neutral-700 px-3 rounded-xl">Prettier</p>
             </div>
           </div>
+             </div>
+            
       
 
         </div>
@@ -121,6 +139,7 @@ const Skills = () => {
                     className="absolute h-1 bg-blue-700 "
                     style={{ width: `${skill.level}%` }}
                   ></motion.span>
+      
                 </div>
                 <p className="mt-4 text-xs text-neutral-500 group-hover:text-white">
                   {skill.category}

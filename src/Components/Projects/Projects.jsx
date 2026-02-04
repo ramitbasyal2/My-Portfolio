@@ -16,8 +16,8 @@ const Projects = () => {
                  <p className='text-blue-600 italic mb-4'> SELECTED WORK</p>
                   <h2 className='text-5xl md:text-7xl max-sm:text-4xl font-bold tracking-tight'>CRAFTED <br /> PROJECTS</h2>
              </div>
-             <p className='text-neutral-500 max-w-sm mb-6'> A curated selection of my favorite projects where 
-              I explored new technologies and pushed UI boundaries</p>
+             <p className='text-neutral-500 max-w-sm mb-6'> A Selection of my favorite projects where 
+              I have explored new technologies.</p>
          </div>
          
        {/*Projects showcase */}
@@ -37,23 +37,23 @@ const Projects = () => {
                   />
                   <div className='absolute lg:inset-0 bg-black/40 lg:opacity-0 lg:group-hover:opacity-100 transiton-opacity 
                   flex items-center justify-center gap-4'>
-                    <span className='bg-white text-black px-6 py-2 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199]'>View Project</span>
-                                       <span className='bg-white text-black px-6 py-2 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199]'>Github</span>
+                    <button onClick={()=> window.open(item.live, '_blank')} className='bg-white text-black px-6 py-2 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199] cursor-pointer '>View Project</button>
+                                       <button onClick={()=> window.open(item.github, "_blank")} className='bg-white text-black px-6 py-2 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199] cursor-pointer'>Github</button>
                   </div>
                   </a>
                   {/* for mobile view */}
                    <div className='lg:hidden mt-2 flex items-center justify-start gap-4 mb-2'>
-                     <span className='bg-white  text-black px-5 py-1 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0'>View Project</span>
-                    <span className='bg-white  text-black px-3 py-1 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0'>Github</span>
+                     <button onClick={()=> window.open(item.live, "_blank")} className='bg-white  text-black px-5 py-1 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 cursor-pointer'>View Project</button>
+                    <button onClick={()=> window.open(item.github, "_blank")} className='bg-white  text-black px-3 py-1 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 cursor-pointer'>Github</button>
                    </div>
                    {/* till here */}
 
                   <div className='mt-8'>
-                      <div className='flex flex-wrap gap-2 mb-4'>
+                      <div className='hidden lg:flex flex-wrap gap-2 mb-4'>
                              {item.tags.map((tag =>(
                                 <span key={tag} className='text-[10px
                                 uppercase tracking-tight bg-neutral-900 border border-neutral-800 text-neutral-400

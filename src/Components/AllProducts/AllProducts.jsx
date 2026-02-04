@@ -24,24 +24,25 @@ const AllProducts = ({mode}) => {
                             <img className="rounded-xl object-cover group-hover:scale-110
                                    transition-transform duration-700 " 
                             src={project.image} alt={project.title} />
-                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 gap-4 ">
-                                  <a className='bg-white text-black px-4 py-2 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199]'>View Project</a>
-                                       <a className='bg-white text-black px-4 py-2 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199]'>Github</a>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 gap-4 "> 
+                                  <button onClick={()=> window.open(project.live, "_blank")} className='bg-white text-black px-4 py-2 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199] cursor-pointer'>View Project</button>
+
+                                       <button onClick={()=> window.open(project.github, "_blank")} className='bg-white text-black px-4 py-2 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 hover:bg-[#d1d1d199] cursor-pointer'>Github</button>
                             </div>
                         </a>
                            {/* for mobile view */}
                    <div className='lg:hidden mt-2 flex items-center justify-start gap-4 mb-4'>
-                     <a className='bg-white  text-black px-5 py-1 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0'>View Project</a>
-                    <a className='bg-white  text-black px-3 py-1 rounded-full 
-                                      font-bold transform translate-y-4 group-hover:translate-y-0'>Github</a>
+                     <button onClick={()=> window.open(project.live, "_blank")} className='bg-white  text-black px-5 py-1 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 cursor-pointer'>View Project</button>
+                    <button onClick={()=> window.open(project.github, "_blank")} className='bg-white  text-black px-3 py-1 rounded-full 
+                                      font-bold transform translate-y-4 group-hover:translate-y-0 cursor-pointer'>Github</button>
                    </div>
                    {/* till here */}
 
                        <div className="mt-8">
-                        <div className="flex gap-4">
+                        <div className="hidden lg:flex gap-4">
                             {
                                 project.tags.map((skill,index)=>(
                                     <span key={index} className="px-4 rounded-3xl border border-gray-600 bg-neutral-800">

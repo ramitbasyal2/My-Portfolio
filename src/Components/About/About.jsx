@@ -4,7 +4,7 @@ import {motion} from 'motion/react'
 const About = ({mode}) => {
 
   return (
-    <div className={` ${ mode === 'light-mode' ? 'bg-[#fff]' : 'bg-[#111]' }   w-full px-4 sm:px-6 md:px-12 ssm:py-16 lg:px-20 py-10 md:py-20 lg:py-30 `}>
+    <div className={` ${ mode === 'light-mode' ? 'bg-[#fff]' : 'bg-[#111]' }   w-full px-4 sm:px-6 md:px-12 sm:py-16 lg:px-20 py-10 md:py-20 lg:py-30 `}>
       <div className=" max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 max-sm:gap-2 gap-20">
         <div>
           {/* images part */}
@@ -43,16 +43,14 @@ const About = ({mode}) => {
           </h1>
           <div className="max-sm:text-[16px] text-xl text-neutral-500 mb-3">
             <p className="">
-              Hello! I'm Ramit, a frontend developer decicated to pushing the
-              boundries of what's possible on the web. I don't just write code.
-              I design systems and orchestrate movements that feel natural to
-              the human eye.{" "}
+              Hello! I'm Ramit Basyal, a frontend developer decicated to build
+               what's possible on the web.    {" "}
             </p>
             <br />
             <p className="border-b border-neutral-600 mb-4 pb-6">
               {" "}
-              My journey started with a deep curiosity for how digitalinterfaces
-              inluence hhuman behavior. Today i leverage modern tools like React
+              My journey started with a deep curiosity for how digital interfaces
+              inluence human behavior. Today i leverage modern tools like React
               and framer Motion to build fast, accessible , and delightful
               applications.{" "}
             </p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, Moon, Sun, X } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import Home from '../Pages/Home'
+
 
 
 const Navbar = ( {mode, setMode} ) => {
@@ -33,10 +33,10 @@ const Navbar = ( {mode, setMode} ) => {
     <div className='w-full fixed z-999 md:px-12 px-6 py-5 lg:px-20'>
        <div className='flex items-center justify-between max-w-7xl mx-auto '>
          <div className="logo text-[19px] md:text-[22px] md:font-bold">
-            <p className='text-amber-600'>RA<span>MI</span>T BA<span>SY</span>AL</p>
+            <p className='font-[cursive] text-2xl bg-linear-to-r from-purple-700 to-pink-600 bg-clip-text text-transparent'>RA<span>MI</span>T BA<span>SY</span>AL</p>
         </div>
 
-       <ul
+       <ul 
   className={`
     fixed top-0 right-0 h-screen w-52 overflow-y-scroll
     flex flex-col gap-4 lg:px-6 border border-neutral-700
