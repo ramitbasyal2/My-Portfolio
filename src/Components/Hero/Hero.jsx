@@ -41,8 +41,8 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex items-center justify-center mt-10 max-sm:mt-8 gap-3 md:gap-4">
-        <button className="bg-white text-black cursor-pointer  border border-neutral-700 font-bold max-sm:px-2 px-4 md:px-8 py-3
-         max-sm:py-3 md:text-xl md:py-3 text-xs rounded-xl  hover:bg-[#d1d1d190] ">Download Resume</button>
+        <button className=" text-black cursor-pointer  border border-neutral-700 font-bold max-sm:px-2 px-4 md:px-8 py-3
+         max-sm:py-3 md:text-xl md:py-3 text-xs rounded-xl  hover:bg-[#d1d1d190] bg-linear-to-r from-indigo-700 to-pink-500 text-white ">Download Resume</button>
         <button className=" border border-neutral-700 cursor-pointer font-bold max-sm: max-sm:px-2 px-4 py-3 md:px-8
          max-sm:py-3 md:text-xl md:py-3 text-xs rounded-xl hover:text-white hover:bg-neutral-900">Github</button>
       </div>

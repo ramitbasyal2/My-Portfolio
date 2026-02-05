@@ -124,3 +124,33 @@ export const services = [
   
 ]
 
+
+// hobbies images
+
+export const slides =[
+  {
+    id:1,
+    image:"../img.jpeg",
+    quote:"hello there 1"
+
+  },
+  {
+    id:2,
+    image:"../img1.jpeg",
+     quote:"hello there 2"
+
+  },
+  {
+    id:3,
+    image:"../img2.jpeg",
+     quote:"hello there 3"
+
+  },
+  {
+    id:4,
+    image:"../img3.jpeg",
+   quote:"hello there 4hey k cha khabar ani aru k gardai hotani"
+
+  }
+
+]

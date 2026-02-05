@@ -22,7 +22,7 @@ const Services = () => {
                 <div className="bg-[#111] p-4 rounded-xl max-w-[400px] transition-transform duratio-500 hover:scale-110">
                    <h1 className="mb-3 font-bold text-xl bg-linear-to-r from-indigo-300 to-yellow-500 bg-clip-text text-transparent">{service.role}</h1>
                    <p className="text-neutral-400 mb-4">{service.description}</p>
-                   <button className="cursor-pointer  px-2 lg:px-3 py-1  bg-white text-black font-bold rounded-md hover:bg-[#d1d1d1d2]">{service.button }</button>
+                   <button className="cursor-pointer bg-linear-to-r from-indigo-500 to-pink-700 text-white  px-2 lg:px-3 py-1  bg-white text-black font-bold rounded-md hover:bg-[#d1d1d1d2]">{service.button }</button>
                 </div>
               ))}
             </div>

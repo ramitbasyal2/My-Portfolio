@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "motion/react";
 
-const Contact = ({mode}) => {
+const Contact = () => {
 
    const handleSubmit = (e)=>{
       e.preventDefault()
    }
   return (
-    <div className={`w-full px-3 md:px-12 lg-px-20 py-20 md:py-30 ${ mode === 'light-mode' ? 'bg-[#fff]' : 'bg-[#111]' } `}>
+    <div className={`w-full px-3 md:px-12 lg-px-20 py-20 md:py-30 `}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-10">
         
         {/* left side */}
@@ -20,23 +20,21 @@ const Contact = ({mode}) => {
         className="flex flex-col"> 
         <p className="text-xs italic text-blue-600">NEXTS STEPS</p>
         <h1 className="font-bold uppercase text-5xl sm:text-4xl max-sm:text-4xl tracking-tight mt-2 mb-4">
-          Lets Build
-          <br /> Something <br />
-          Iconic.{" "}
+          Lets Work
+          <br /> Together . <br />
         </h1>
         <p className="text-neutral-500 max-w-96 mb-8">
-          Wheather you have a fully-formed idea or just the spark of a project,
-          I'm here to bring it to life with precision and style.
+           You can share your ideas about the project you want to build..
         </p>
         <div className="flex flex-col">
           <p className="uppercase text-xs font-bold text-zinc-500">Email ME</p>
-          <h1 className="font-bold">heyitsme@gmail.com</h1>
+          <h1 className="font-bold">basyalramit02@gmail.com</h1>
         </div>
         <div className="flex flex-col">
           <p className="uppercase text-zinc-400 text-xs mt-4">Socials</p>
           <div className="flex gap-3 text-zinc-600">
-            <a href="#">LinkedIn</a>
-            <a href="#">Github</a>
+            <a href="https://www.linkedin.com/in/ramit-basyal-81a601353 " target="_blank">LinkedIn</a>
+            <a href="https://github.com/ramitbasyal2" target="_blank">Github</a>
             <a href="#">Instagram</a>
           </div>
         </div>
