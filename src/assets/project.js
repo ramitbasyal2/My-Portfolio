@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 
 export const project = [
   {
@@ -29,7 +30,7 @@ export const project = [
     description:
       "A Spotify-inspired frontend application where users can listen to music.",
     tags: ["React", "CSS Grid"],
-    live:"",
+    live:"https://spotify-clone-tau-kohl.vercel.app/",
     github:'https://github.com/ramitbasyal2/Spotify-clone',
     image: "../project4.png",
     link: "#",
@@ -111,16 +112,19 @@ export const experience = [
 export const services = [
   {
     id:1,
-    role:"Web Developer",
-    description:"I create, modern UI for scalable user interface. Looks attractive to the user feels natural",
-    button:"Let's Connect"
+    role:"Web Development",
+    description:"I create, modern Web application for scalable user Interface.",
+    button:"Let's Connect",
+    connect:"https://www.linkedin.com/in/ramit-basyal-81a601353"
   },
    {
     id:2,
-    role:"UI/UX Designer",
-    description:"I create, modern UI for scalable user interface. Looks attractive to the user feels natural",
-    button:"Let's Connect"
+    role:"UI/UX Designing",
+    description:"I create, modern UI for smooth user Interface. Which feels natural.",
+    button:"Let's Connect",
+    connect:"https://www.instagram.com/ramitbasyal2?igsh=MTQ5cmc3ZnYyazNrNw=="
   },
+  
   
 ]
 
@@ -131,26 +135,18 @@ export const slides =[
   {
     id:1,
     image:"../img.jpeg",
-    quote:"hello there 1"
-
   },
   {
     id:2,
     image:"../img1.jpeg",
-     quote:"hello there 2"
-
   },
   {
     id:3,
     image:"../img2.jpeg",
-     quote:"hello there 3"
-
   },
   {
     id:4,
     image:"../img3.jpeg",
-   quote:"hello there 4hey k cha khabar ani aru k gardai hotani"
-
-  }
-
+  },
+  
 ]

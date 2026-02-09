@@ -7,7 +7,7 @@ const AllProducts = ({mode}) => {
     const navigate = useNavigate()
 
   return (
-    <div className={`bg-black p-5 md:p-5 py-20 lg:py-40 lg:p-10  w-full`}>
+    <div className={`bg-black min-h-screen p-5 md:p-5 py-20 lg:py-40 lg:p-10  w-full`}>
      <div className="max-w-7xl mx-auto">
             <div className=" flex items-center justify-between ">
             <h1 className="text-4xl font-bold tracking-wide">

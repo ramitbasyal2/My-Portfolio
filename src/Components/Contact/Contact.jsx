@@ -1,11 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "motion/react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
 
-   const handleSubmit = (e)=>{
-      e.preventDefault()
-   }
+   //form data web3forms.com
+    const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending...")
+    const formData = new FormData(event.target);
+    formData.append("access_key", "21d52140-e69d-4da4-a531-36bd7683f86b");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    if(data.success){
+      setResult("")
+      toast.success("Form submitted successFully")
+      event.target.reset();
+    }else{
+      console.log("Error", data);
+      toast.error(data.message)
+      setResult("")
+    }
+  };
+
   return (
     <div className={`w-full px-3 md:px-12 lg-px-20 py-20 md:py-30 `}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-10">
@@ -47,26 +71,26 @@ const Contact = () => {
         viewport={{once:true}}
         
       >
-           <form onSubmit={handleSubmit} className="w-4/5 md:w-96 lg:w-5/6 border-b border-neutral-700 p-6 rounded-2xl border">
+           <form onSubmit={onSubmit} className="w-4/5 md:w-96 lg:w-5/6 border-b border-neutral-700 p-6 rounded-2xl border">
              <div className="flex flex-col">
                  <label className="text-xs text-gray-400">FULL NAME</label>
-              <input type="text" placeholder="Enter your name"
+              <input type="text" placeholder="Enter your name" name="Name" required
                className="border border-neutral-700 placeholder:text-gray-500 p-3 mt-2 mb-4 rounded-md" />
              </div>
               <div className="flex flex-col">
                  <label className="text-xs text-gray-400">EMAIL</label>
-              <input type="email" placeholder="Enter your name"
+              <input type="email" placeholder="Enter your email" name="Email" required
               className="border border-neutral-700 placeholder:text-gray-500 p-3 mt-2 mb-4 rounded-md" />
              </div>
               <div className="flex flex-col">
                  <label className="text-xs text-gray-400">MESSAGE</label>
-               <textarea placeholder="write message.."
+               <textarea placeholder="write message.." name="Message" required
                 className="resize-none mt-2 placeholder:text-gray-500 border border-gray-500 rounded-md p-3"
                 rows={5} cols={10}></textarea>
              </div>
 
              <div className="mt-6 w-full  border border-neutral-700-pointer mb-2 hover:bg-[#d1d1d123] text-neutral-700 text-center p-4 outline-0 rounded-md text-xl font-bold">
-                <button type="submit" className="cursor-pointer">Launch Inquiry</button>
+                <button type="submit" className="cursor-pointer">{result ? result : "Send Message" }</button>
              </div>
 
            </form>

@@ -67,22 +67,24 @@ const Hobbies = () => {
               >
                 <img
                   src={slide.image}
-                  className="w-full h-full object-cover rounded-md"
+                  className="w-full h-full relative object-cover rounded-md shadow-2xl shadow-gray-300"
                   alt=""
+                
                 />
-                <p className="absolute text-4xl">{slide.quote}</p>
               </div>
               
             ))}
             
           </div>
              
-            <div className="absolute flex inset-0 bg-black/55"></div>
+            <div className="absolute flex inset-0 bg-black/55">
+            </div>
+           
 
           {/* LEFT ARROW */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2  bg-[#d1d1d13f] p-3 cursor-pointer "
+            className="absolute left-4 top-1/2 -translate-y-1/2  bg-[#d1d1d13f]  md:p-3 lg:p-3 cursor-pointer "
           >
             <ChevronLeft color="black" size={38} />
           </button>
@@ -90,7 +92,7 @@ const Hobbies = () => {
           {/* RIGHT ARROW */}
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2  bg-[#d1d1d147] p-3 cursor-pointer"
+            className="absolute right-4 top-1/2 -translate-y-1/2  bg-[#d1d1d147] md:p-3 lg:p-3 cursor-pointer"
           >
             <ChevronRight color="black" size={36} />
           </button>

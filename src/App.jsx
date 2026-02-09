@@ -7,22 +7,20 @@ import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import Services from "./Components/Services/Services";
 import Navbar from "./Components/Navbar";
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 const App = () => {
  
-     const [mode,setMode] = useState("dark-mode")
-      
-     useEffect(()=>{
-          document.querySelector("body").className = mode;
-          
-     },[mode])
+    
     
   return (
     <div className="app">
+      <ToastContainer/>
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<AllProducts />} />
-          <Route path="/skills" element={<Skills mode={mode}/>} />
+          <Route path="/skills" element={<Skills/>} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/services" element={<Services/>}/>
         </Routes>
