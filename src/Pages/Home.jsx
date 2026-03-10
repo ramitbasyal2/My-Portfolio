@@ -4,6 +4,7 @@ import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
 // import Experience from "../Components/Experience/Experience";
 import Hobbies from "../Components/Hobbies/Hobbies";
+import Cop from "../Components/Cop";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       {/* <Experience/> */}
       <Hobbies/>
       <Contact />
+      {/* <Cop/> */}
     </div>
   );
 };
