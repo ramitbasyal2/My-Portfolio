@@ -9,6 +9,7 @@ import Services from "./Components/Services/Services";
 import Navbar from "./Components/Navbar";
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import ScrollToTop from "./Components/ScrollToTop";
 const App = () => {
  
     
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <div className="app">
       <ToastContainer/>
+      <ScrollToTop/>
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
