@@ -29,8 +29,8 @@ const Hero = () => {
         left-3 rounded-full" ></span> <p className="text-[13px] max-sm:text-[10px] ml-2 max-sm:ml-1 text-neutral-500">AVAILABLE FOR NEW OPPORTUNITIES</p>
       </motion.div>
       <div className="mt-4 max-sm:text-5xl sm:text-8xl md:text-[110px] lg:text-[130px] font-bold">
-        <h1>BUILT</h1>
-        <h1 className="text-blue-800">TO BUILD</h1>
+        <h1> ฿ Ʉ ł Ⱡ ₮</h1>
+        <h1 className="text-blue-800">₮Ø ฿ɄłⱠĐ</h1>
       </div>
       <div className="mt-8 max-sm:mt-6 md:w-2xl lg:w-3xl">
         <p className="text-neutral-500 max-sm:text-xl text-2xl">
