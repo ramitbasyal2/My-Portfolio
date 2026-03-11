@@ -148,5 +148,13 @@ export const slides =[
     id:4,
     image:"../img3.jpeg",
   },
+  {
+    id:5,
+    image:"../img2.jpeg",
+  },
+  {
+    id:6,
+    image:"../img3.jpeg",
+  },
   
 ]
