@@ -23,18 +23,17 @@ export const project = [
     image: "../project2.png",
     link: "#",
   },
-
   {
-    id: 3,
-    title: "Music Player",
-    description:
-      "A Spotify-inspired frontend application where users can listen to music.",
-    tags: ["React", "CSS Grid"],
-    live:"https://spotify-clone-tau-kohl.vercel.app/",
-    github:'https://github.com/ramitbasyal2/Spotify-clone',
-    image: "../project4.png",
-    link: "#",
+   id:3,
+   title: "Learning Management System",
+   description:"A FullStack Learning Management System Where a user can Create and Upload, Courses and Lectures.",
+   tags:["React","Tailwind","Express.js"],
+   live:"https://lms-1-fg1t.onrender.com/",
+   github:'https://github.com/ramitbasyal2/LMS',
+   image:'../project6.png',
+   link:"#"
   },
+  
 ];
 
 export const allProject = [
@@ -58,6 +57,17 @@ export const allProject = [
     live:'https://netflex-clone-amber-six.vercel.app/',
     github:'https://github.com/ramitbasyal2/Netflex-clone',
     image: "../project5.png",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Music Player",
+    description:
+      "A Spotify-inspired frontend application where users can listen to music.",
+    tags: ["React", "CSS Grid"],
+    live:"https://spotify-clone-tau-kohl.vercel.app/",
+    github:'https://github.com/ramitbasyal2/Spotify-clone',
+    image: "../project4.png",
     link: "#",
   },
 
