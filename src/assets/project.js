@@ -7,7 +7,7 @@ export const project = [
     description:
       " Here you can chat with your friends in real time and as well as can share photos , i have used socket.io for realtime chat.",
     tags: ["React", "Tailwind", "Node.js"],
-    live:'',
+    live:'https://chat-app-yuy8.onrender.com/',
     github:'https://github.com/ramitbasyal2/Chat-App',
     image: "../project1.png",
     link: "#",
