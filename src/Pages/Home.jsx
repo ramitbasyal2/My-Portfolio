@@ -6,6 +6,7 @@ import Contact from "../Components/Contact/Contact";
 import Hobbies from "../Components/Hobbies/Hobbies";
 import Cop from "../Components/Cop";
 import Image from "../Components/Image";
+import Head from "../Components/Head";
 
 
 const Home = () => {
@@ -13,13 +14,15 @@ const Home = () => {
   return (
 
     <div className="home">
+      
       <Hero />
       <About />
         <Image/>
       {/* <Experience/> */}
       {/* <Hobbies/> */}
       <Contact />
-    
+
+<Head/>    
       {/* <Cop/> */}
     </div>
   );

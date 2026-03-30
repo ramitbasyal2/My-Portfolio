@@ -42,15 +42,23 @@ const Navbar = ( ) => {
     <div className='w-full fixed z-999 md:px-12 px-6 py-5 lg:px-20'>
        <div className='flex items-center justify-between max-w-7xl mx-auto '>
          <div className="logo text-[19px] md:text-[22px] md:font-bold">
-            <p className='font-[cursive] text-2xl bg-linear-to-r from-purple-700 to-pink-600 bg-clip-text
-             text-transparent'>RA<span>MI</span>T BA<span>SY</span>AL</p>
+            {/* <p className='font-[cursive] text-2xl bg-linear-to-r from-purple-700 to-pink-600 bg-clip-text
+             text-transparent'>RA<span>MI</span>T BA<span>SY</span>AL</p> */}
+             <div className='flex gap-1'>
+              <div className='relative w-14 h-14 border-2 border-white rounded-full'>
+               <img src="./profile1.jpeg" className='w-full h-full rounded-full object-cover' alt="" />
+               <span className='w-3 h-3 bg-green-500 absolute rounded-full -right-2 bottom-1 border'></span>
+             </div>
+                <div><p className='border px-4 py-1 rounded-t-md rounded-br-md rounded-tl-md
+                 bg-linear-to-r from-purple-700 to-pink-600 border-none text-sm font-medium text-gray-300'>Ramit Basyal</p></div>
+             </div>
         </div>
 
        <ul onClick={()=> setIsMenuOpen(false)}
   className={`
     fixed top-0 right-0 h-screen w-80 overflow-y-scroll
     flex flex-col gap-4 lg:px-6 border border-neutral-700
-    bg-neutral-900 p-2 text-neutral-400
+    bg-neutral-900 py-[5px] text-neutral-400
 
     transition-all duration-900 ease-in-out
     ${isMenuOpen
@@ -68,10 +76,10 @@ const Navbar = ( ) => {
              ${isMenuOpen
                  ? 'opacity-100 rotate-0 scale-100'
                  : 'opacity-0 rotate-90 scale-75 pointer-events-none'}`} > <X size={32} /> </div> }
-        <li className='active hover:text-neutral-100 cursor-pointer ml-6 text-[19px]' onClick={()=> {setMenu("Home"); navigate('/'); setIsMenuOpen(false);  }}> Home {menu === "Home" ?  <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> } </li>
-        <li className='hover:text-neutral-100 cursor-pointer ml-6 text-[19px]' onClick={()=> {setMenu("Projects"); navigate('/projects'); setIsMenuOpen(false);  }}>Projects {menu === "Projects" ? <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> }</li>
-        <li className='hover:text-neutral-100 cursor-pointer ml-6 text-[19px]' onClick={()=> {setMenu("Skills"); navigate('/skills'); setIsMenuOpen(false); }}>Skills {menu === "Skills" ? <span className='block h-1 w-[90%] bg-pink-900'></span>: <></> }</li>
-        <li className='hover:text-neutral-100 cursor-pointer ml-6 mr-6 text-[19px]' onClick={()=> {setMenu("Contact"); navigate('/services'); setIsMenuOpen(false); }} >Services {menu === "Contact" ? <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> }</li>
+        <li className='active hover:text-neutral-100 cursor-pointer ml-6 text-[16px]' onClick={()=> {setMenu("Home"); navigate('/'); setIsMenuOpen(false);  }}> Home {menu === "Home" ?  <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> } </li>
+        <li className='hover:text-neutral-100 cursor-pointer ml-6 text-[16px]' onClick={()=> {setMenu("Projects"); navigate('/projects'); setIsMenuOpen(false);  }}>Projects {menu === "Projects" ? <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> }</li>
+        <li className='hover:text-neutral-100 cursor-pointer ml-6 text-[16px]' onClick={()=> {setMenu("Skills"); navigate('/skills'); setIsMenuOpen(false); }}>Skills {menu === "Skills" ? <span className='block h-1 w-[90%] bg-pink-900'></span>: <></> }</li>
+        <li className='hover:text-neutral-100 cursor-pointer ml-6 mr-6 text-[16px]' onClick={()=> {setMenu("Contact"); navigate('/services'); setIsMenuOpen(false); }} >Services {menu === "Contact" ? <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> }</li>
         <button className='lg:hidden max-sm:hidden  md:px-6 md:py-3 px-4 py-2 mt-4 bg-white text-[16px] font-medium text-black rounded-[50px]
          hover:bg-[#d1d1d1a5] cursor-pointer' onClick={()=> {setState(true);setIsMenuOpen(false); }}>Hire Me</button>          
        </ul>
