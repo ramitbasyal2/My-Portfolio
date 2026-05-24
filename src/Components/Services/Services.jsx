@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { services } from "../../assets/project";
 const Services = () => {
 
+    const [count, setCount] = useState(0)
   return (
-    <div className="w-full min-h-screen md:px-12 px-6 py-20 lg:py-40 lg:px-24">
+   <>
+     {count > 0 && <div className="w-full min-h-screen md:px-12 px-6 py-20 lg:py-40 lg:px-24">
       <div className="max-w-7xl mx-auto flex-grow">
         {/* navabar */}
         <div className=" flex items-center justify-between md:mb-20 mb-16 max-sm:mb-14">
@@ -29,7 +31,9 @@ const Services = () => {
               ))}
             </div>
         </div>
-      </div>
+      </div>}
+      <p className='w-full h-screen flex items-center justify-center text-2xl text-neutral-500 ' >!!!</p>
+   </>
   );
 };
 

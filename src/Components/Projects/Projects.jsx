@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { project } from '../../assets/project.js'
 import { motion } from 'motion/react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 
 const Projects = () => {
+  const [count, setCount] = useState(0)
   
   const navigate = useNavigate()
 
-  return (
-    <div className='w-full md:px-12 px-6 py-20 lg:py-40 lg:px-24 rounded-tr-[200px] rounded-bl-[200px]'>
+  return   (
+    <>
+     {count > 0 && <div className='w-full md:px-12 px-6 py-20 lg:py-40 lg:px-24 rounded-tr-[200px] rounded-bl-[200px]'>
       <div className='max-w-7xl mx-auto'>
          <div className='flex flex-col flex-wrap md:flex-row md:items-end justify-between mb-6 gap-8'> 
              <div>
@@ -81,8 +83,9 @@ const Projects = () => {
 
 
       </div>
-    </div>
-     
+    </div>}
+       <p className='w-full h-screen flex items-center justify-center text-2xl text-neutral-500 ' >Projects Will Be Added Soon...</p>
+     </>
   )
 }
 

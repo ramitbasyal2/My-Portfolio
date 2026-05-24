@@ -17,7 +17,7 @@ const Image = () => {
   }, [controls, totalWidth]);
 
   return (
-    <div className="w-full overflow-hidden py-20">
+    <div className="w-full overflow-hidden lg:hidden  py-20">
       <motion.div
         className="flex flex-nowrap gap-6"
         animate={controls}
