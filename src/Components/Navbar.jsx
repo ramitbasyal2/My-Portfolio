@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import { Menu, Moon, Sun, X } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { toast } from "react-toastify";
 
 
 const Navbar = ( ) => {
-
+  
+   const location = useLocation();
+    const activeMenu = location.pathname
   const navigate = useNavigate()
-    const [menu, setMenu] = useState("Home")
+   
     const [state, setState] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    
     
   //form data web3forms.com
       const [result, setResult] = useState("");
@@ -42,9 +46,7 @@ const Navbar = ( ) => {
     <div className='w-full fixed z-999 md:px-12 px-6 py-5 lg:px-20'>
        <div className='flex items-center justify-between max-w-7xl mx-auto '>
          <div className="logo text-[19px] md:text-[22px] md:font-bold">
-            {/* <p className='font-[cursive] text-2xl bg-linear-to-r from-purple-700 to-pink-600 bg-clip-text
-             text-transparent'>RA<span>MI</span>T BA<span>SY</span>AL</p> */}
-             <div className='flex gap-1'>
+             <div onClick={()=> navigate('/')} className='flex gap-1 cursor-pointer'>
               <div className='relative w-14 h-14 border-2 border-white rounded-full'>
                <img src="./profile1.jpeg" className='w-full h-full rounded-full object-cover' alt="" />
                <span className='w-3 h-3 bg-green-500 absolute rounded-full -right-2 bottom-1 border'></span>
@@ -76,10 +78,14 @@ const Navbar = ( ) => {
              ${isMenuOpen
                  ? 'opacity-100 rotate-0 scale-100'
                  : 'opacity-0 rotate-90 scale-75 pointer-events-none'}`} > <X size={32} /> </div> }
-        <li className='active hover:text-neutral-100 cursor-pointer ml-6 text-[16px]' onClick={()=> {setMenu("Home"); navigate('/'); setIsMenuOpen(false);  }}> Home {menu === "Home" ?  <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> } </li>
-        <li className='hover:text-neutral-100 cursor-pointer ml-6 text-[16px]' onClick={()=> {setMenu("Projects"); navigate('/projects'); setIsMenuOpen(false);  }}>Projects {menu === "Projects" ? <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> }</li>
-        <li className='hover:text-neutral-100 cursor-pointer ml-6 text-[16px]' onClick={()=> {setMenu("Skills"); navigate('/skills'); setIsMenuOpen(false); }}>Skills {menu === "Skills" ? <span className='block h-1 w-[90%] bg-pink-900'></span>: <></> }</li>
-        <li className='hover:text-neutral-100 cursor-pointer ml-6 mr-6 text-[16px]' onClick={()=> {setMenu("Contact"); navigate('/services'); setIsMenuOpen(false); }} >Services {menu === "Contact" ? <span className='block h-1 w-[90%] bg-pink-900'></span> : <></> }</li>
+        <li className={` hover:text-neutral-100 cursor-pointer ml-6 text-[16px] ${activeMenu === '/' && 'border-b-2 border-pink-500 '} `} 
+        onClick={()=> {navigate('/'); setIsMenuOpen(false);}}> Home </li>
+        <li className={`hover:text-neutral-100 cursor-pointer ml-6 text-[16px] ${activeMenu === '/projects' && 'border-b-2 border-pink-500 ' } `}
+            onClick={()=> {navigate('/projects'); setIsMenuOpen(false)}}>Projects </li>
+        <li className={`hover:text-neutral-100 cursor-pointer ml-6 text-[16px] ${activeMenu === '/skills' && 'border-b-2 border-pink-500 ' } `}
+         onClick={()=> {navigate('/skills'); setIsMenuOpen(false); }}>Skills </li>
+        <li className={`hover:text-neutral-100 cursor-pointer ml-6 mr-6 text-[16px] ${activeMenu === '/services' && 'border-b-2 border-pink-500 ' } `}
+         onClick={()=> {navigate('/services'); setIsMenuOpen(false); }} >Services </li>
         <button className='lg:hidden max-sm:hidden  md:px-6 md:py-3 px-4 py-2 mt-4 bg-white text-[16px] font-medium text-black rounded-[50px]
          hover:bg-[#d1d1d1a5] cursor-pointer' onClick={()=> {setState(true);setIsMenuOpen(false); }}>Hire Me</button>          
        </ul>

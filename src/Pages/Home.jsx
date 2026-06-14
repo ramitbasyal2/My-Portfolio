@@ -6,7 +6,7 @@ import Contact from "../Components/Contact/Contact";
 import Hobbies from "../Components/Hobbies/Hobbies";
 import Cop from "../Components/Cop";
 import Image from "../Components/Image";
-import Head from "../Components/Head";
+
 
 
 const Home = () => {
@@ -22,7 +22,6 @@ const Home = () => {
       {/* <Hobbies/> */}
       <Contact />
 
-      <Head/>    
       {/* <Cop/> */}
     </div>
   );

@@ -14,16 +14,15 @@ const About = () => {
              transition={{duration:1,delay:0.2}}
              viewport={{once:true}}
     
-            className="relative w-full max-w-[450px] h-[400px] md:h-[500px] lg:h-[550px] mx-auto max-sm:mb-48 " >
+            className="relative w-full max-w-[460px] h-[400px] md:h-[500px] lg:h-[550px] mx-auto max-sm:mb-48 " >
             <img src="./profile1.jpeg"alt=""
               className="w-full h-full object-cover rounded-xl" />
              
              {/* tag */}
-            <div className=" absolute -right-5 -bottom-5 bg-blue-800 max-sm:p-2 px-4 py-2 max-sm:text-[16px] text-xs font-bold text-white rounded-xl
-             max-sm:w-[160px] max-sm:h-[80px] w-[200px] h-[80px]" >
-              <span className="text-2xl">1+ <span className='text-xl'>YEARS</span></span>
-              <br />
-             <span className='text-xl md:text-2xl'>EXPERIENCE</span>
+            <div className=" absolute -right-5 -bottom-5 bg-blue-800  rounded-xl
+             max-sm:w-[160px] max-sm:h-[80px] w-[230px] h-[100px]" >
+               <video className='w-full h-full object-cover rounded-xl object-center' src='./about.mp4'
+                 loop autoPlay playsInline/>
             </div>
           </motion.div>
 
@@ -38,35 +37,34 @@ const About = () => {
         className="max-sm:-mt-42">
           <p className="italic text-blue-600 ">THE DEVELOPER</p>
           <h1 className="text-3xl md:4xl lg:text-4xl tracking-tight max-sm:text-2xl font-mono max-sm:mt-2 mt-3 mb-3">
-            Bridge between <br />
-            <span className="text-gray-600"> imagination </span>
-            and technical <br /> reality.
+            Turning <br />
+            <span className="text-gray-600"> Curiosity </span>
+            Into code <br /> one project at a time.
           </h1>
           <div className="max-sm:text-[16px] text-xl text-neutral-500 mb-3">
             <p className="">
-              Hello! I'm Ramit Basyal, a frontend developer decicated to build
-               what's possible on the web.    {" "}
+             Hello! I'm Ramit Basyal, a Full-Stack Developer dedicated to building things that are useful, 
+             clean, and real. {" "}
             </p>
             <br />
             <p className="border-b border-neutral-600 mb-4 pb-6">
-              {" "}
-              My journey started with a deep curiosity for how digital interfaces
-              inluence human behavior. Today i leverage modern tools like React
-              and framer Motion to build fast, accessible , and delightful
-              applications.{" "}
+             I enjoy building things that actually work and make sense to use.
+I got into tech out of genuine curiosity, I wanted to understand how the internet works, not just use it. That curiosity led me to BSc. CSIT and eventually to the MERN stack, 
+where I've been building real projects ever since.
+
             </p>
           </div>
           <div className="flex gap-6 group">
             <div className="border-r border-neutral-500 relative">
               <h2 className='font-bold text-xl mb-2 '>Strategy</h2>
               <p className='text-sm text-gray-400 max-w-72 '>
-                Translating business goals into scalable frontend aechitectures.
+                Breaking down ideas into clean, scalable architecture.
               </p>
               <span className='absolute w-3 h-3 bg-blue-500  -right-[6px] top-0 rounded-full group-hover:scale-130 group-hover:bg-amber-400'></span>
             </div>
             <div className="design">
               <h2 className='font-bold text-xl mb-2'>Design</h2>
-              <p className='text-sm text-gray-400 max-w-72'>Creating asthetic UI Components that priotize usability. </p>
+              <p className='text-sm text-gray-400 max-w-72'>Creating aesthetic UI components that prioritize usability. </p>
             </div>
           </div>
         </motion.div>
