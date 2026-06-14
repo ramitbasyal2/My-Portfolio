@@ -7,12 +7,12 @@ const Skills = () => {
 
   const [data,setData] = useState(true)
   const [extraData,setExtraData] = useState(true)
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(1)
 
   return (
      
     <>
-     { count > 0 && <div className={`w-full py-20 lg:py-40 md:px-12 px-6 `}>
+     { count > 0 ? <div className={`w-full py-20 lg:py-40 md:px-12 px-6 `}>
     <div className="max-w-7xl mx-auto ">
       <div className=" flex items-center justify-between mb-16">
         <h1 className="text-4xl font-bold tracking-wide">
@@ -33,7 +33,7 @@ const Skills = () => {
               <h2 className="text-xl font-bold mb-4">Frontend :</h2>
         <div className="mb-8 border border-neutral-600 px-4 py-4 rounded-md">
           <ul className=" text-gray-400 mb-4">
-            <li>● Focused on clean architecture, optimized rendering, and scalable frontend solutions. </li>             
+            <li>● Focused on clean architecture, optimized rendering. </li>             
           </ul>
           <div className="mt-2 flex flex-wrap gap-3 rounded-md mb-3 text-[12px] lg:text-[14px]">
             <p className="bg-neutral-700 px-3 rounded-xl">HTML</p>
@@ -47,14 +47,14 @@ const Skills = () => {
         <h2 className="text-xl font-bold mb-4">Backend :</h2>
         <div className="border border-neutral-600 p-4 mb-4 rounded-md">
           <ul className=" text-gray-400 mb-4">
-            <li>  ● Have experience working with Node.js and Express to build scalable and efficient backend applications.</li>                             
+            <li>  ● Backend Technologies which i have learned.</li>                             
           </ul>
             <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
             <p className="bg-neutral-700 px-3 rounded-xl">NODE.JS</p>
             <p className="bg-neutral-700 px-3 rounded-xl">MONGODB</p>
-            <p className="bg-neutral-700 px-3 rounded-xl">Express</p>
+            <p className="bg-neutral-700 px-3 rounded-xl">EXPRESS</p>
             <p className="bg-neutral-700 px-3 rounded-xl"> JWT</p>
-            <p className="bg-neutral-700 px-3 rounded-xl">REST</p>
+     
           </div>
           </div>
             </div>
@@ -67,36 +67,37 @@ const Skills = () => {
                 <h2 className="text-xl font-bold mb-4">Databases :</h2>
         <div className="border border-neutral-600 p-4 mb-4 rounded-md">
           <ul className=" text-gray-400 mb-4">
-            <li> ● Databases play a critical role in data storage and management. Below are the databases I work with. </li>                             
+            <li> ● Data storage and management. </li>                             
           </ul>
             <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
             <p className="bg-neutral-700 px-3 rounded-xl">MONGODB</p>
-            <p className="bg-neutral-700 px-3 rounded-xl">PostgreSQL</p>
-              <p className="bg-neutral-700 px-3 rounded-xl">mySQL</p>
+            {/* <p className="bg-neutral-700 px-3 rounded-xl">PostgreSQL</p> */}
+              {/* <p className="bg-neutral-700 px-3 rounded-xl">MySQL</p> */}
           </div>
         </div>
 
           <h2 className="text-xl font-bold mb-4">Deployment :</h2>
         <div className="border border-neutral-600 p-4 mb-4 rounded-md">
           <ul className=" text-gray-400 mb-4">
-            <li> ● I also handle application deployment using reliable platforms to ensure smooth, secure, and scalable production environments. </li>                             
+            <li> ● Application deployment using reliable platforms. </li>                             
           </ul>
             <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
-            <p className="bg-neutral-700 px-3 rounded-xl">vercel</p>
-            <p className="bg-neutral-700 px-3 rounded-xl">Netify</p>
+            <p className="bg-neutral-700 px-3 rounded-xl">VERCEL</p>
+            <p className="bg-neutral-700 px-3 rounded-xl">NETLIFY</p>
+            <p className="bg-neutral-700 px-3 rounded-xl">RENDER</p>
             
           </div>
         </div>
           <h2 className="text-xl font-bold mb-4">Tools :</h2>
         <div className="border border-neutral-600 p-4 mb-4 rounded-md">
           <ul className=" text-gray-400 mb-4">
-            <li> ● In addition, I use the following  tools and technologies to improve development workflow and productivity. </li>                             
+            <li> ● Tools and technologies </li>                             
           </ul>
             <div className="mt-2 flex flex-wrap gap-3 mb-3 text-[12px] lg:text-[14px]">
             <p className="bg-neutral-700 px-3 rounded-xl">Git</p>
             <p className="bg-neutral-700 px-3 rounded-xl">Github</p>
               <p className="bg-neutral-700 px-3 rounded-xl">Postman</p>
-                              <p className="bg-neutral-700 px-3 rounded-xl">Prettier</p>
+                
           </div>
         </div>
             </div>
@@ -151,9 +152,9 @@ const Skills = () => {
         ))}
       </div>
     </div>
-  </div>}
+  </div> : <p className='w-full h-screen flex items-center justify-center text-2xl text-neutral-500 ' >Skills Will Be Added Soon...</p> }
  
-   <p className='w-full h-screen flex items-center justify-center text-2xl text-neutral-500 ' >Skills Will Be Added Soon...</p>
+   
     </>
     
    

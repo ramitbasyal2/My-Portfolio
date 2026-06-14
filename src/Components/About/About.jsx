@@ -14,15 +14,16 @@ const About = () => {
              transition={{duration:1,delay:0.2}}
              viewport={{once:true}}
     
-            className="relative w-full max-w-[600px] h-[450px] md:h-[600px] lg:h-[650px] mx-auto max-sm:mb-48 " >
+            className="relative w-full max-w-[450px] h-[400px] md:h-[500px] lg:h-[550px] mx-auto max-sm:mb-48 " >
             <img src="./profile1.jpeg"alt=""
               className="w-full h-full object-cover rounded-xl" />
              
              {/* tag */}
-            <div className=" absolute -right-5 -bottom-5 bg-blue-800 max-sm:p-2  p-4 max-sm:text-[18px] text-2xl font-bold text-white rounded-xl max-sm:w-[190px] max-sm:h-[90px] w-[260px] h-[110px]" >
-              <span className="text-2xl">1+</span>
+            <div className=" absolute -right-5 -bottom-5 bg-blue-800 max-sm:p-2 px-4 py-2 max-sm:text-[16px] text-xs font-bold text-white rounded-xl
+             max-sm:w-[160px] max-sm:h-[80px] w-[200px] h-[80px]" >
+              <span className="text-2xl">1+ <span className='text-xl'>YEARS</span></span>
               <br />
-              YEARS EXPERIENCE
+             <span className='text-xl md:text-2xl'>EXPERIENCE</span>
             </div>
           </motion.div>
 
