@@ -11,9 +11,9 @@ const Hero = () => {
       >
        
      <div className="max-w-7xl mx-auto flex items-center justify-center flex-col text-center px-6 md:px-12 lg:px-24 max-sm:py-20 py-30">
-      <div className="border absolute max-sm:top-30 top-40 md:top-40 -rotate-10 text-xs max-sm:text-[8px] md:text-[13px] 
+      {/* <div className="border absolute max-sm:top-30 top-40 md:top-40 -rotate-10 text-xs max-sm:text-[8px] md:text-[13px] 
       text-start px-3 rounded-2xl py-[2px] font-[monospace] text-[#5dcaa5]"> 
-        ●  Open For Opportunities</div>
+        ●  Open For Opportunities</div> */}
       <div className="mt-17 max-sm:text-5xl sm:text-8xl md:text-[110px] lg:text-[130px] font-bold">
         {/* <h1> ฿ Ʉ ł Ⱡ ₮</h1> */}
         <h1><span className="relative text-gray-600">B
