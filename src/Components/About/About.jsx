@@ -3,11 +3,7 @@ import {motion} from 'motion/react'
 
 
 const About = () => {
-
-  const [count, setCount] = useState(0)
-  
   return (
-    { count > 0 &&
          <div className={` w-full px-4 sm:px-6 md:px-12 sm:py-16 lg:px-20 py-10 md:py-20 lg:py-30 `}>
       <div className=" max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 max-sm:gap-2 gap-20">
         <div>
@@ -75,7 +71,7 @@ where I've been building real projects ever since.
       </div>
     </div>
       
-    }
+    
   );
 }
 
