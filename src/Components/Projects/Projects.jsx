@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 
 const Projects = () => {
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(0)
   
   const navigate = useNavigate()
 
