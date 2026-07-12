@@ -7,7 +7,7 @@ const Skills = () => {
 
   const [data,setData] = useState(true)
   const [extraData,setExtraData] = useState(true)
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(0)
 
   return (
      
