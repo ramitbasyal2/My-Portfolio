@@ -16,7 +16,7 @@ const Home = () => {
     <div className="home">
       
       <Hero />
-      <About />
+      {/* <About /> */}
         <Image/>
       {/* <Experience/> */}
       {/* <Hobbies/> */}
