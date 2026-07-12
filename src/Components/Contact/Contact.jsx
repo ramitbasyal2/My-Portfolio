@@ -58,7 +58,7 @@ const Contact = () => {
           <p className="uppercase text-zinc-400 text-xs mt-4">Socials</p>
           <div className="flex gap-3 text-zinc-600">
             <a href="https://www.linkedin.com/in/ramit-basyal-81a601353 " target="_blank">LinkedIn</a>
-            <a href="https://github.com/ramitbasyal2" target="_blank">Github</a>
+            <a href="#" target="_blank">Github</a>
             <a href="#">Instagram</a>
           </div>
         </div>
