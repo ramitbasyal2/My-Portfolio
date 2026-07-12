@@ -63,17 +63,19 @@ const Hero = () => {
       </div>
       <div className="mt-8 max-sm:mt-11 w-[70%] max-sm:w-[70%] md:w-[70%] lg:w-[60%] leading-0 "> 
        <span className="bg-linear-to-r from-indigo-500 to-yellow-500 bg-clip-text text-transparent 
-        text-xs md:text-xl"> Hey there!  I'm Ramit, a MERN-stack Developer, who enjoys building
+        text-xs md:text-xl"> Hey there!  I'm Ramit, who enjoys building
         for the web.
        </span> 
        
       </div>
       <div className="flex items-center justify-center mt-10 max-sm:mt-8 gap-3 md:gap-4">
+        {/* href="/Resume.pdf" talako a tag ko ho */}
        <a className=" text-black cursor-pointer border-0 outline-0 font-bold max-sm:px-2 px-4 md:px-8 py-4
-         max-sm:py-3 md:text-xl md:py-4 text-xs rounded-xl bg-[#5dcaa5] hover:bg-[#5dcaa6c2] text-black " href="/Resume.pdf"
+         max-sm:py-3 md:text-xl md:py-4 text-xs rounded-xl bg-[#5dcaa5] hover:bg-[#5dcaa6c2] text-black " 
           download="Ramit_Basyal_Resume.pdf"  target="_blank"
          rel="noopener noreferrer">Download Resume</a>
-        <button onClick={()=> window.open('https://github.com/ramitbasyal2','_blank')} className=" border border-neutral-700 cursor-pointer font-bold max-sm: max-sm:px-2 px-4 py-4 md:px-8
+         {/* onClick={()=> window.open('https://github.com/ramitbasyal2','_blank') */}
+        <button className=" border border-neutral-700 cursor-pointer font-bold max-sm: max-sm:px-2 px-4 py-4 md:px-8
          max-sm:py-3 md:text-xl md:py-4 text-xs rounded-xl hover:text-white hover:bg-neutral-900">Github</button>
       </div>
      </div>
